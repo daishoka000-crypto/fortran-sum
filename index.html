@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>周柏廷 413210633 得分 100</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column, exam answer sheet; each question a ruled section with prompt / process / grade */
+:root{
+  --bg:#f6f7f4; --paper:#ffffff; --fg:#1d2420; --muted:#5d6a63; --line:#d9dfd9;
+  --accent:#1f6f5c; --accent-soft:#e2efe9; --code-bg:#eef1ed; --pass:#1f7a44; --pass-bg:#e1f2e6; --fail:#b3392f;
+  --display:"Noto Serif TC",serif; --body:"Noto Sans TC",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121614; --paper:#1a201d; --fg:#e4e9e5; --muted:#9aa8a0; --line:#2f3833;
+  --accent:#6cc4a8; --accent-soft:#203a31; --code-bg:#0f1311; --pass:#7fd49a; --pass-bg:#1d3526; --fail:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121614; --paper:#1a201d; --fg:#e4e9e5; --muted:#9aa8a0; --line:#2f3833;
+  --accent:#6cc4a8; --accent-soft:#203a31; --code-bg:#0f1311; --pass:#7fd49a; --pass-bg:#1d3526; --fail:#ef8a80; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.75;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px}
+main{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:12px;border-bottom:3px double var(--line);padding-bottom:24px}
+.eyebrow{font-size:13px;letter-spacing:.12em;color:var(--muted)}
+h1{font-family:var(--display);font-size:clamp(28px,6vw,40px);line-height:1.25;margin:0;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
+.meta span{color:var(--muted)}
+.score{font-family:var(--display);font-size:56px;font-weight:900;color:var(--accent);line-height:1}
+.score small{font-size:20px;color:var(--muted);font-weight:700}
+.links{font-size:15px}
+a{color:var(--accent)}
+section{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.qhead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+h2{font-family:var(--display);font-size:21px;margin:0;line-height:1.4;text-wrap:balance}
+.pts{flex:none;font-weight:700;background:var(--pass-bg);color:var(--pass);border-radius:999px;padding:2px 12px;font-size:14px;font-variant-numeric:tabular-nums}
+.prompt{margin:0;color:var(--muted);border-left:3px solid var(--line);padding-left:12px}
+h3{font-size:14px;letter-spacing:.08em;color:var(--accent);margin:6px 0 0}
+p{margin:0}
+pre{background:var(--code-bg);border:1px solid var(--line);border-radius:4px;padding:12px 14px;margin:0;overflow-x:auto;
+  font-family:var(--mono);font-size:13px;line-height:1.6;color:var(--fg)}
+code{font-family:var(--mono);font-size:.9em}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+.tw{overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;white-space:nowrap}
+th{color:var(--muted);font-weight:500}
+.ok{color:var(--pass);font-weight:700}
+.grade{background:var(--accent-soft);border-radius:4px;padding:10px 14px;font-size:15px}
+.grader{display:flex;flex-direction:column;gap:10px}
+.grader label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;padding:8px 10px;border:1px solid var(--line);border-radius:4px}
+.grader input{margin-top:6px;accent-color:var(--accent);width:18px;height:18px;flex:none}
+.grader label:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.total{font-family:var(--display);font-size:24px;font-weight:900}
+.total b{color:var(--accent)}
+footer{color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="eyebrow">期中考 · 簡答題 · 目標達成評分制</div>
+  <h1>周柏廷 413210633 得分 100</h1>
+  <div class="meta">
+    <div class="score">100<small> / 100</small></div>
+    <div><span>姓名</span> 周柏廷　<span>學號</span> 413210633</div>
+  </div>
+  <div class="links">GitHub：<a href="https://github.com/daishoka000-crypto/fortran-sum" target="_blank" rel="noopener">github.com/daishoka000-crypto/fortran-sum</a></div>
+</header>
+
+<section>
+  <div class="qhead"><h2>一、撰寫並編譯 1 加到 N 的 Fortran 程式</h2><span class="pts">20 / 20</span></div>
+  <p class="prompt">題目：指揮 AI 輸出一個能做 1 加到 N 的 Fortran 程式並完成編譯，確認可以成功執行計算並輸出結果。（20 分）</p>
+  <h3>答題過程</h3>
+  <p>要求 AI 安裝 gfortran（GNU Fortran 13.3.0），撰寫 <code>sum.f90</code>。為了避免 N 很大時溢位，程式使用 64 位元整數。</p>
+  <pre>program sum_to_n
+  implicit none
+  integer(kind=8) :: n, i, total
+  read(*,*) n
+  total = 0
+  do i = 1, n
+    total = total + i
+  end do
+  print '(A,I0,A,I0)', 'Sum of 1 to ', n, ' = ', total
+end program sum_to_n</pre>
+  <pre>$ gfortran sum.f90 -o sum
+$ echo 10 | ./sum
+Sum of 1 to 10 = 55
+$ echo 100 | ./sum
+Sum of 1 to 100 = 5050</pre>
+  <div class="grade"><b>AI 評分：</b>編譯無錯誤，執行後輸出正確結果，達標 <b>+20</b>。</div>
+</section>
+
+<section>
+  <div class="qhead"><h2>二、三次隨機驗證</h2><span class="pts">20 / 20</span></div>
+  <p class="prompt">題目：指揮 AI 執行該程式進行三次隨機的驗證，以確定該程式功能的正確性。（20 分）</p>
+  <h3>答題過程</h3>
+  <p>用 <code>shuf</code> 隨機產生 1 到 100000 之間的 N，餵給程式，再和公式 N(N+1)/2 的結果比對。</p>
+  <pre>for k in 1 2 3; do
+  n=$(shuf -i 1-100000 -n 1)
+  out=$(echo $n | ./sum); exp=$(( n*(n+1)/2 ))
+  [ "${out##*= }" = "$exp" ] &amp;&amp; echo PASS || echo FAIL
+done</pre>
+  <div class="tw"><table>
+    <thead><tr><th>次數</th><th>隨機 N</th><th>程式輸出</th><th>公式 N(N+1)/2</th><th>結果</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>95427</td><td>4553203878</td><td>4553203878</td><td class="ok">PASS</td></tr>
+      <tr><td>2</td><td>72407</td><td>2621423028</td><td>2621423028</td><td class="ok">PASS</td></tr>
+      <tr><td>3</td><td>34434</td><td>592867395</td><td>592867395</td><td class="ok">PASS</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grade"><b>AI 評分：</b>三次隨機測試全部與公式相符，達標 <b>+20</b>。</div>
+</section>
+
+<section>
+  <div class="qhead"><h2>三、Git 版本控制：原版與註解版</h2><span class="pts">20 / 20</span></div>
+  <p class="prompt">題目：針對所開發的程式進行 Git 版本控制，將原版認錄（commit），之後指揮 AI 針對原程式碼進行逐行註解並編譯驗證成功後，再次認錄為新版。（20 分）</p>
+  <h3>答題過程</h3>
+  <pre>$ git init -b main
+$ git add sum.f90 .gitignore verify.txt
+$ git commit -m "原版：1 加到 N 的 Fortran 程式"
+# AI 加入逐行中文註解後重新編譯驗證
+$ gfortran sum.f90 -o sum &amp;&amp; echo 100 | ./sum
+Sum of 1 to 100 = 5050
+$ git commit -am "新版：加入逐行中文註解，編譯驗證成功"
+$ git log --oneline
+1e6c759 新版：加入逐行中文註解，編譯驗證成功
+98482b3 原版：1 加到 N 的 Fortran 程式</pre>
+  <p>註解版程式碼：</p>
+  <pre>! 程式名稱：sum_to_n —— 計算 1 + 2 + ... + N 的總和
+program sum_to_n
+  ! 強制所有變數都必須明確宣告，避免隱式型別錯誤
+  implicit none
+  ! 宣告 64 位元整數：n 為上限、i 為迴圈計數器、total 為累加總和
+  integer(kind=8) :: n, i, total
+  ! 從標準輸入讀取使用者輸入的 N
+  read(*,*) n
+  ! 將總和初始化為 0
+  total = 0
+  ! 迴圈：i 從 1 跑到 n
+  do i = 1, n
+    ! 把目前的 i 加進總和
+    total = total + i
+  ! 迴圈結束
+  end do
+  ! 以指定格式輸出結果
+  print '(A,I0,A,I0)', 'Sum of 1 to ', n, ' = ', total
+! 程式結束
+end program sum_to_n</pre>
+  <div class="grade"><b>AI 評分：</b>原版與註解版各有一次 commit，註解版編譯驗證成功，達標 <b>+20</b>。</div>
+</section>
+
+<section>
+  <div class="qhead"><h2>四、推送到 GitHub 雲端儲存</h2><span class="pts">20 / 20</span></div>
+  <p class="prompt">題目：將本地端已經進行版本控制的程式碼，傳送到 Github 做雲端儲存。（20 分）</p>
+  <h3>答題過程</h3>
+  <pre>$ git remote add origin https://github.com/daishoka000-crypto/fortran-sum
+$ git push -u origin main
+To https://github.com/daishoka000-crypto/fortran-sum
+ * [new branch]      main -&gt; main
+branch 'main' set up to track 'origin/main'.</pre>
+  <p>雲端位址：<a href="https://github.com/daishoka000-crypto/fortran-sum" target="_blank" rel="noopener">https://github.com/daishoka000-crypto/fortran-sum</a></p>
+  <div class="grade"><b>AI 評分：</b>本地的完整 commit 紀錄已推送到 GitHub，達標 <b>+20</b>。</div>
+</section>
+
+<section>
+  <div class="qhead"><h2>五、任務達成評分系統</h2><span class="pts">20 / 20</span></div>
+  <p class="prompt">題目：要求 AI 做一個任務達成評分系統，允許輸入前四題的結果，達標就給分。（20 分）</p>
+  <h3>答題過程</h3>
+  <p>AI 寫了命令列版 <code>grade.sh</code>（已一起推送到 GitHub），逐題詢問 Y/N，達標就給 20 分：</p>
+  <pre>$ printf 'Y\nY\nY\nY\n' | ./grade.sh
+  → 達標 +20
+  → 達標 +20
+  → 達標 +20
+  → 達標 +20
+五、評分系統本身完成 +20
+總分：100 / 100</pre>
+  <h3>網頁版評分系統（可直接操作）</h3>
+  <div class="grader" id="grader">
+    <label for="g1"><input type="checkbox" id="g1" checked><span>一、Fortran 程式編譯成功並輸出結果（20 分）</span></label>
+    <label for="g2"><input type="checkbox" id="g2" checked><span>二、三次隨機驗證全部正確（20 分）</span></label>
+    <label for="g3"><input type="checkbox" id="g3" checked><span>三、原版 commit，加註解並編譯驗證後再 commit（20 分）</span></label>
+    <label for="g4"><input type="checkbox" id="g4" checked><span>四、推送到 GitHub 雲端儲存（20 分）</span></label>
+    <label for="g5"><input type="checkbox" id="g5" checked><span>五、評分系統完成（20 分）</span></label>
+    <div class="total">總分：<b id="total">100</b> / 100</div>
+  </div>
+  <div class="grade"><b>AI 評分：</b>評分系統可以輸入前四題的結果，並依達標情況計分，達標 <b>+20</b>。</div>
+</section>
+
+<footer>周柏廷 · 413210633 · 總分 100 / 100</footer>
+</main>
+
+<script>
+(function(){
+  var boxes=document.querySelectorAll('#grader input');
+  function update(){var t=0;boxes.forEach(function(b){if(b.checked)t+=20});document.getElementById('total').textContent=t;}
+  boxes.forEach(function(b){b.addEventListener('change',update)});
+  update();
+})();
+</script>
+</body>
+</html>
